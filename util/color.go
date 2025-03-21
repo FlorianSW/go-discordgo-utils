@@ -1,4 +1,4 @@
-package discordgoutil
+package util
 
 const (
 	ColorAqua            = 1752220

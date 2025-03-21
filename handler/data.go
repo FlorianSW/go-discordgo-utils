@@ -1,4 +1,4 @@
-package discordgoutil
+package handler
 
 import (
 	"github.com/bwmarrin/discordgo"
