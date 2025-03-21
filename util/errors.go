@@ -24,7 +24,7 @@ func hasResponse(s *discordgo.Session, i *discordgo.Interaction) bool {
 	return true
 }
 
-func errorResponse(s *discordgo.Session, i *discordgo.Interaction, msg string) {
+func ErrorResponse(s *discordgo.Session, i *discordgo.Interaction, msg string) {
 	var err error
 	if hasResponse(s, i) {
 		_, err = s.InteractionResponseEdit(i, &discordgo.WebhookEdit{
