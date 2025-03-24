@@ -20,7 +20,7 @@ var _ = Describe("Marshaller", func() {
 			err := marshaller.Unmarshal([]*discordgo.ApplicationCommandInteractionDataOption{
 				{Name: "someString", Value: "A_STRING", Type: discordgo.ApplicationCommandOptionString},
 				{Name: "someInt", Value: 150, Type: discordgo.ApplicationCommandOptionInteger},
-				{Name: "anotherInt", Value: 20, Type: discordgo.ApplicationCommandOptionNumber},
+				{Name: "anotherInt", Value: float64(20), Type: discordgo.ApplicationCommandOptionNumber},
 				{Name: "someBoolean", Value: true, Type: discordgo.ApplicationCommandOptionBoolean},
 			}, &v)
 			Expect(err).ToNot(HaveOccurred())
